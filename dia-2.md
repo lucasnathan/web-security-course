@@ -42,6 +42,8 @@ CRUD é um acrônimo que representa as quatro operações básicas que podem ser
 
 Neste exercício, você irá explorar uma vulnerabilidade de autenticação usando a ferramenta Burp Suite. A vulnerabilidade está relacionada ao cabeçalho `Host` na requisição HTTP, que pode ser manipulado para obter acesso não autorizado a áreas restritas do site.
 
+link do lab: [https://portswigger.net/web-security/host-header/exploiting/lab-host-header-authentication-bypass](https://portswigger.net/web-security/host-header/exploiting/lab-host-header-authentication-bypass)
+
 <!-- 
 link do lab: [https://portswigger.net/web-security/host-header/exploiting/lab-host-header-authentication-bypass](https://portswigger.net/web-security/host-header/exploiting/lab-host-header-authentication-bypass)
 
