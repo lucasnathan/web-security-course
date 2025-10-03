@@ -63,9 +63,11 @@ Lab: Host header authentication bypass
 
 Neste exercício, você irá explorar uma vulnerabilidade de design inseguro usando a ferramenta Burp Suite. A vulnerabilidade está relacionada à confiança excessiva nos controles do lado do cliente, permitindo que você manipule os dados enviados ao servidor para obter um benefício não autorizado.
 
+[https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-excessive-trust-in-client-side-controls](https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-excessive-trust-in-client-side-controls)  
+
+
 <!---
 
-[https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-excessive-trust-in-client-side-controls](https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-excessive-trust-in-client-side-controls)  
 
 ### Resolução do Laboratório
 
@@ -81,8 +83,10 @@ Neste exercício, você irá explorar uma vulnerabilidade de design inseguro usa
 
 Neste exercício, você irá explorar uma vulnerabilidade de criptografia fraca usando a ferramenta Burp Suite. A vulnerabilidade está relacionada ao uso inseguro de um algoritmo de criptografia para proteger cookies, permitindo que você manipule os cookies para obter acesso não autorizado.
 
-<!--
 [https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-authentication-bypass-via-encryption-oracle](https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-authentication-bypass-via-encryption-oracle)
+
+<!--
+
 
 1.  Faça login com a opção "Permanecer conectado" ativada e poste um comentário. Estude as requisições e respostas correspondentes usando as ferramentas manuais do Burp. Observe que o cookie `stay-logged-in` está criptografado.
 2.  Note que, ao tentar enviar um comentário com um endereço de e-mail inválido, a resposta define um cookie de notificação (`notification`) criptografado antes de redirecioná-lo para o post do blog.
