@@ -45,7 +45,6 @@ Neste exercício, você irá explorar uma vulnerabilidade de autenticação usan
 link do lab: [https://portswigger.net/web-security/host-header/exploiting/lab-host-header-authentication-bypass](https://portswigger.net/web-security/host-header/exploiting/lab-host-header-authentication-bypass)
 
 <!-- 
-link do lab: [https://portswigger.net/web-security/host-header/exploiting/lab-host-header-authentication-bypass](https://portswigger.net/web-security/host-header/exploiting/lab-host-header-authentication-bypass)
 
 Lab: Host header authentication bypass
 
