@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dia 4 - Ataques Avançados
+title: Dia 4 - OAuth e CSRF
 nav_order: 5
 ---
 

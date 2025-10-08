@@ -44,8 +44,6 @@ Neste exercício, você irá explorar uma vulnerabilidade de autenticação usan
 
 link do lab: [https://portswigger.net/web-security/host-header/exploiting/lab-host-header-authentication-bypass](https://portswigger.net/web-security/host-header/exploiting/lab-host-header-authentication-bypass)
 
-<!-- 
-
 Lab: Host header authentication bypass
 
 ### Resolução do Laboratório
@@ -57,7 +55,6 @@ Lab: Host header authentication bypass
 5.  No Burp Repeater, altere o cabeçalho `Host` para `localhost` e envie a requisição. Observe que agora você acessou com sucesso o painel de administração, que oferece a opção de excluir diferentes usuários.
 6.  Altere a linha da requisição para `GET /admin/delete?username=carlos` e envie a requisição para excluir o usuário `carlos` e resolver o laboratório.
 
--->
 
 ## Exercício de Design Inseguro
 
@@ -65,9 +62,9 @@ Neste exercício, você irá explorar uma vulnerabilidade de design inseguro usa
 
 [https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-excessive-trust-in-client-side-controls](https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-excessive-trust-in-client-side-controls)  
 
+Este laboratório não valida adequadamente a entrada do usuário. Você pode explorar uma falha lógica em seu fluxo de compra para comprar itens por um preço não intencional. Para resolver o laboratório, compre uma "Lightweight l33t leather jacket".
 
-<!---
-
+Você pode fazer login em sua própria conta usando as seguintes credenciais: `wiener:peter`
 
 ### Resolução do Laboratório
 
@@ -77,7 +74,11 @@ Neste exercício, você irá explorar uma vulnerabilidade de design inseguro usa
 4.  Repita este processo para definir o preço para qualquer valor menor que o seu crédito disponível na loja.
 5.  Conclua o pedido para resolver o laboratório.
 
--->
+### Exemplo:
+
+[https://infosecwriteups.com/how-i-found-a-ticket-booking-bug-that-allowed-me-to-travel-almost-for-free-in-tnstc-2c7aa23aebf6](https://infosecwriteups.com/how-i-found-a-ticket-booking-bug-that-allowed-me-to-travel-almost-for-free-in-tnstc-2c7aa23aebf6)
+
+
 
 ## Exercício de Criptografia Fraca
 
@@ -85,8 +86,11 @@ Neste exercício, você irá explorar uma vulnerabilidade de criptografia fraca 
 
 [https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-authentication-bypass-via-encryption-oracle](https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-authentication-bypass-via-encryption-oracle)
 
-<!--
+Este laboratório contém uma falha lógica que expõe um oráculo de criptografia aos usuários. Para resolver o laboratório, explore essa falha para obter acesso ao painel de administração e excluir o usuário **carlos**.
 
+Você pode fazer login em sua própria conta usando as seguintes credenciais: `wiener:peter`
+
+### Resolução do Laboratório
 
 1.  Faça login com a opção "Permanecer conectado" ativada e poste um comentário. Estude as requisições e respostas correspondentes usando as ferramentas manuais do Burp. Observe que o cookie `stay-logged-in` está criptografado.
 2.  Note que, ao tentar enviar um comentário com um endereço de e-mail inválido, a resposta define um cookie de notificação (`notification`) criptografado antes de redirecioná-lo para o post do blog.
@@ -105,5 +109,3 @@ Neste exercício, você irá explorar uma vulnerabilidade de criptografia fraca 
 15. Envie o novo texto cifrado para o Decoder, depois faça o URL-decode e o Base64-decode. Desta vez, exclua 32 bytes do início dos dados. Recodifique os dados e cole-os no parâmetro `notification` na requisição `decrypt`. Verifique a resposta para confirmar que sua entrada foi descriptografada com sucesso e, crucialmente, não contém mais o prefixo "Invalid email address: ". Você deve ver apenas `administrator:seu-timestamp`.
 16. Do histórico do Proxy, envie a requisição `GET /` para o Burp Repeater. Exclua completamente o cookie de sessão e substitua o cookie `stay-logged-in` pelo texto cifrado do seu cookie criado. Envie a requisição. Observe que agora você está logado como administrador e tem acesso ao painel de administração.
 17. Usando o Burp Repeater, acesse `/admin` e observe a opção para excluir usuários. Acesse `/admin/delete?username=carlos` para resolver o laboratório.
--->
-
