@@ -6,7 +6,7 @@ nav_order: 5
 
 # Dia 4: Ataques Avançados - CSRF, SSRF, XXE e OAuth
 
-E aí, pessoal! No Dia 4, vamos explorar algumas das vulnerabilidades mais "criativas" e perigosas do mundo da segurança web. Avançando além nas ideias dos exercícios passados a ideia dessas vulnerabilidades é justamente focar em enganar o servidor, forçar ações em nome do usuário e abusar da confiança entre sistemas.
+Hoje vamos avançar nos conceitos que já aprendemos nos exercícios passados. O foco das vulnerabilidades que vamos conversar hoje é enganar o servidor, forçar ações em nome do usuário e abusar da confiança entre sistemas.
 
 Vamos discutir sobre 3 tópicos:
 - **Cross-Site Request Forgery (CSRF):** O ataque que faz o usuário trabalhar para o hacker sem saber.
